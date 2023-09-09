@@ -10,22 +10,22 @@ double div = 0; //Variavel para a operação de divisão;
 int mul = 0; //Variavel para a operação de multiplicação;
 var op = " "; //Variavel em string para a Operação.
 
-void soma(int a, int b) {
-  som = a + b;
-  print("$a + $b = $som");
+void soma(int a, int b) { //Define a função de soma
+  som = a + b; //Calculo da função
+  print("$a + $b = $som"); //Retorno da função
 }
 
-void subt(int a, int b) {
+void subt(int a, int b) { //Define a função de subtração
   sub = a - b;
   print("$a - $b = $sub");
 }
 
-void divi(int a, int b) {
+void divi(int a, int b) { //Define a função de divisão
   div = a / b;
   print("$a + $b = $div");
 }
 
-void mult(int a, int b) {
+void mult(int a, int b) { //Define a função de multiplicação
   mul = a * b;
   print("$a x $b = $mul");
 }
