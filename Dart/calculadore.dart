@@ -33,31 +33,28 @@ void mult(int a, int b) {
 main() {
   //Lógica para a captura de dados do teclado:
   stdout.write("Informe o primeiro numero >>> "); //Instrução para o Usuario;
-  final entradaDoUsuario1 =
-      stdin.readLineSync()!; //Função de captura de teclas do usuario;
-  final int n1 = int.parse(entradaDoUsuario1); //Armazenamento na variavel n1.
+  final entradaDoUsuario1 = stdin.readLineSync()!; //Função de captura de teclas do usuario;
+  final int n1 = int.parse(entradaDoUsuario1); //Armazena o valor na variavel n1.
 
   stdout.write("Informe o segundo numero >>> ");
   final entradaDoUsuario2 = stdin.readLineSync()!;
-  final int n2 = int.parse(entradaDoUsuario2); //Armazenamento na variavel n2.
+  final int n2 = int.parse(entradaDoUsuario2); //Armazena o valor na variavel n2.
 
-  stdout.write(
-      "Informe a operação [digite: 'som' para soma, 'sub' para subtração, 'div' para divisão e 'mul' para... preciso falar?] >>> ");
-  op = stdin
-      .readLineSync()
-      .toString(); //Armazena a operação (op) em forma de string.
+  stdout.write("Informe a operação [digite: 'som' para soma, 'sub' para subtração, 'div' para divisão e 'mul' para multiplicação]: ");
+  op = stdin.readLineSync().toString(); //Armazena a operação (op) em forma de string.
 
+  //Função de switch case para as operações:
   switch (op) {
-    case "som":
+    case "som": //caso de soma;
       soma(n1, n2);
       break;
-    case "sub":
+    case "sub": //caso de subtração;
       subt(n1, n2);
       break;
-    case "div":
+    case "div": //caso de divisão;
       divi(n1, n2);
       break;
-    case "mul":
+    case "mul": //Casode multiplicação.
       mult(n1, n2);
       break;
   }
