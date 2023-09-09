@@ -1,2 +1,3 @@
-#Ignorando a porra do arquivo de configurações do vscode
+#Ignorando o arquivo de configurações do vscode
 Dart/.vscode
+.tok.txt
