@@ -1,5 +1,4 @@
 
-
 import 'dart:io';
 
 int n1 = 0;
@@ -15,8 +14,7 @@ main() {
   final entradaDoUsuario2 = stdin.readLineSync()!;
   final int n2 = int.parse(entradaDoUsuario2);
 
-  stdout.write(
-      "Informe a operação [digite: 'som' para soma, 'sub' para subtração, 'div' para divisão e 'mul' para... preciso falar?] >>> ");
+  stdout.write("Informe a operação [digite: 'som' para soma, 'sub' para subtração, 'div' para divisão e 'mul' para... preciso falar?] >>> ");
   op = stdin.readLineSync().toString();
 
 
