@@ -29,7 +29,7 @@ void divi(int a, int b) {
     print("E: Impossivel dividir por 0"); //Mensagem de erro
   } else {
     div = a / b;
-    print("$a + $b = $div");
+    print("$a / $b = $div");
   }
 }
 
